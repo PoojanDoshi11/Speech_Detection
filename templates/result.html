@@ -1,0 +1,27 @@
+<!-- result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - Hate Speech Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech Detection Result</h1>
+        <p><strong>Input Text:</strong> {{ text }}</p>
+        <p class="result">
+            {% if result == 'Hate Speech' %}
+                <span class="badge hate-speech">Hate Speech</span>
+            {% elif result == 'Offensive Language' %}
+                <span class="badge offensive-language">Offensive Language</span>
+            {% else %}
+                <span class="badge non-offensive">Non-offensive</span>
+            {% endif %}
+        </p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
