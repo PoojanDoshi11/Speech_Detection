@@ -1,6 +1,6 @@
 # Speech Type Detection
 
-This project is always for the fun. 
+This project utilizes a machine learning model to detect hate speech and offensive language in social media posts. Implemented using Python and Flask, it provides a web interface for users to input text and receive predictions. The model classifies text into three categories: "Hate Speech," "Offensive Language," and "No Hate or Offensive Language," achieving an accuracy of 87.3%.
 
 ## Table of Contents
 
@@ -13,11 +13,31 @@ This project is always for the fun.
 
 ## About
 
-Provide a more detailed description of your project. Explain its purpose, features, and any other relevant information.
+This project focuses on detecting hate speech and offensive language in social media posts. Using a machine learning model trained on a labeled dataset, the application can classify text into three categories: "Hate Speech," "Offensive Language," and "No Hate or Offensive Language." The project is implemented using Python and Flask, providing a web interface to input text and get predictions.
 
 ## Features
 
-List the main features of your project. What does it do? What problems does it solve?
+- **Data Preprocessing:** 
+  - **Text Cleaning:** Removal of URLs, HTML tags, punctuation, digits, and stopwords. 
+  - **Stemming:** Reducing words to their root form using NLTK's Snowball Stemmer.
+
+- **Model Training:**
+  - **Algorithm:** Decision Tree Classifier for classification.
+  - **Vectorization:** Text data is converted into numerical features using CountVectorizer.
+
+- **Web Interface:**
+  - **Flask Framework:** Simple web application to input text and display predictions.
+  - **Endpoints:** 
+    - `/`: Renders the home page.
+    - `/predict`: Accepts text input via POST method and returns the prediction result.
+
+- **Evaluation:**
+  - **Metrics:** Confusion matrix and accuracy score to evaluate model performance.
+  - **Visualization:** Heatmap of the confusion matrix using Seaborn.
+
+- **Easy to Use:**
+  - **Beginner Friendly:** Clear structure and detailed code comments for easy understanding.
+  - **Deployment Ready:** Flask app setup for local deployment.
 
 ## Installation
 
