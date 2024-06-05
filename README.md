@@ -1,6 +1,6 @@
-# Project Name
+# Speech Type Detection
 
-Short description or introduction of your project.
+This project is always for the fun. 
 
 ## Table of Contents
 
